@@ -1,0 +1,114 @@
+[debug] [2022-10-29T06:06:41.664Z] ----------------------------------------------------------------------
+[debug] [2022-10-29T06:06:41.666Z] Command:       /usr/local/bin/firebase /Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-10-29T06:06:41.666Z] CLI Version:   11.15.0
+[debug] [2022-10-29T06:06:41.667Z] Platform:      darwin
+[debug] [2022-10-29T06:06:41.667Z] Node Version:  v16.16.0
+[debug] [2022-10-29T06:06:41.668Z] Time:          Fri Oct 28 2022 23:06:41 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-29T06:06:41.668Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-29T06:06:41.738Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-29T06:06:41.739Z] > authorizing via signed-in user (hishamtariq.hi@gmail.com)
+[debug] [2022-10-29T06:06:41.740Z] [iam] checking project hisham-tariq for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-29T06:06:41.742Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions [none]
+[debug] [2022-10-29T06:06:41.742Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions x-goog-quota-user=projects/hisham-tariq
+[debug] [2022-10-29T06:06:41.742Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-29T06:06:43.250Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions 200
+[debug] [2022-10-29T06:06:43.251Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-29T06:06:43.252Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq [none]
+[debug] [2022-10-29T06:06:43.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq 200
+[debug] [2022-10-29T06:06:43.769Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq {"projectId":"hisham-tariq","projectNumber":"460855481722","displayName":"hisham portfolio","name":"projects/hisham-tariq","resources":{"hostingSite":"hisham-tariq"},"state":"ACTIVE","etag":"1_a33d0f5c-a0db-4dde-bebc-f70f8644d98c"}
+[debug] [2022-10-29T06:06:46.602Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites pageToken=&pageSize=10
+[debug] [2022-10-29T06:06:48.502Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites 200
+[debug] [2022-10-29T06:06:48.502Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites {"sites":[{"name":"projects/hisham-tariq/sites/hisham-tariq","defaultUrl":"https://hisham-tariq.web.app","appId":"1:460855481722:web:65bc7f19b00389346db2c3","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-29T06:06:48.503Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config [none]
+[debug] [2022-10-29T06:06:49.796Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config 200
+[debug] [2022-10-29T06:06:49.796Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config {"projectId":"hisham-tariq","appId":"1:460855481722:web:65bc7f19b00389346db2c3","storageBucket":"hisham-tariq.appspot.com","apiKey":"AIzaSyBwZWslVjKIKPXcyFYlM2V_dfUrTt3P6zo","authDomain":"hisham-tariq.firebaseapp.com","messagingSenderId":"460855481722","measurementId":"G-F7BBT4GHCD"}
+[debug] [2022-10-29T06:06:54.802Z] Error: Next.js requires React 18.2.0 to be installed.
+    at Object.getBaseWebpackConfig [as default] (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/webpack-config.js:59:19)
+    at async Promise.all (index 0)
+    at async Span.traceAsyncFn (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/trace/trace.js:79:20)
+    at async /Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:449:33
+    at async /Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:433:13
+    at async Span.traceAsyncFn (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/trace/trace.js:79:20)
+    at async build (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:64:29)
+    at async build (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:33:5)
+    at async prepareFrameworks (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:239:93)
+    at async deploy (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-29T06:07:48.960Z] ----------------------------------------------------------------------
+[debug] [2022-10-29T06:07:48.962Z] Command:       /usr/local/bin/firebase /Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-10-29T06:07:48.963Z] CLI Version:   11.15.0
+[debug] [2022-10-29T06:07:48.963Z] Platform:      darwin
+[debug] [2022-10-29T06:07:48.963Z] Node Version:  v16.16.0
+[debug] [2022-10-29T06:07:48.964Z] Time:          Fri Oct 28 2022 23:07:48 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-29T06:07:48.965Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-29T06:07:49.036Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-29T06:07:49.036Z] > authorizing via signed-in user (hishamtariq.hi@gmail.com)
+[debug] [2022-10-29T06:07:49.036Z] [iam] checking project hisham-tariq for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-29T06:07:49.038Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions [none]
+[debug] [2022-10-29T06:07:49.038Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions x-goog-quota-user=projects/hisham-tariq
+[debug] [2022-10-29T06:07:49.038Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-29T06:07:50.528Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions 200
+[debug] [2022-10-29T06:07:50.528Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-29T06:07:50.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq [none]
+[debug] [2022-10-29T06:07:51.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq 200
+[debug] [2022-10-29T06:07:51.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq {"projectId":"hisham-tariq","projectNumber":"460855481722","displayName":"hisham portfolio","name":"projects/hisham-tariq","resources":{"hostingSite":"hisham-tariq"},"state":"ACTIVE","etag":"1_a33d0f5c-a0db-4dde-bebc-f70f8644d98c"}
+[debug] [2022-10-29T06:07:53.849Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites pageToken=&pageSize=10
+[debug] [2022-10-29T06:07:55.535Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites 200
+[debug] [2022-10-29T06:07:55.535Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites {"sites":[{"name":"projects/hisham-tariq/sites/hisham-tariq","defaultUrl":"https://hisham-tariq.web.app","appId":"1:460855481722:web:65bc7f19b00389346db2c3","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-29T06:07:55.536Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config [none]
+[debug] [2022-10-29T06:07:57.763Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config 200
+[debug] [2022-10-29T06:07:57.763Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config {"projectId":"hisham-tariq","appId":"1:460855481722:web:65bc7f19b00389346db2c3","storageBucket":"hisham-tariq.appspot.com","apiKey":"AIzaSyBwZWslVjKIKPXcyFYlM2V_dfUrTt3P6zo","authDomain":"hisham-tariq.firebaseapp.com","messagingSenderId":"460855481722","measurementId":"G-F7BBT4GHCD"}
+[debug] [2022-10-29T06:08:01.972Z] Error: Next.js requires React 18.2.0 to be installed.
+    at Object.getBaseWebpackConfig [as default] (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/webpack-config.js:59:19)
+    at async Promise.all (index 0)
+    at async Span.traceAsyncFn (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/trace/trace.js:79:20)
+    at async /Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:449:33
+    at async /Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:433:13
+    at async Span.traceAsyncFn (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/trace/trace.js:79:20)
+    at async build (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:64:29)
+    at async build (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:33:5)
+    at async prepareFrameworks (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:239:93)
+    at async deploy (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-29T06:10:59.884Z] ----------------------------------------------------------------------
+[debug] [2022-10-29T06:10:59.886Z] Command:       /usr/local/bin/firebase /Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-10-29T06:10:59.887Z] CLI Version:   11.15.0
+[debug] [2022-10-29T06:10:59.887Z] Platform:      darwin
+[debug] [2022-10-29T06:10:59.887Z] Node Version:  v16.16.0
+[debug] [2022-10-29T06:10:59.888Z] Time:          Fri Oct 28 2022 23:10:59 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-29T06:10:59.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-29T06:10:59.958Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-29T06:10:59.959Z] > authorizing via signed-in user (hishamtariq.hi@gmail.com)
+[debug] [2022-10-29T06:10:59.959Z] [iam] checking project hisham-tariq for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-29T06:10:59.961Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions [none]
+[debug] [2022-10-29T06:10:59.961Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions x-goog-quota-user=projects/hisham-tariq
+[debug] [2022-10-29T06:10:59.961Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-29T06:11:02.844Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions 200
+[debug] [2022-10-29T06:11:02.844Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hisham-tariq:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-29T06:11:02.845Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq [none]
+[debug] [2022-10-29T06:11:03.986Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq 200
+[debug] [2022-10-29T06:11:03.987Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hisham-tariq {"projectId":"hisham-tariq","projectNumber":"460855481722","displayName":"hisham portfolio","name":"projects/hisham-tariq","resources":{"hostingSite":"hisham-tariq"},"state":"ACTIVE","etag":"1_a33d0f5c-a0db-4dde-bebc-f70f8644d98c"}
+[debug] [2022-10-29T06:11:06.231Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites pageToken=&pageSize=10
+[debug] [2022-10-29T06:11:10.182Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites 200
+[debug] [2022-10-29T06:11:10.183Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hisham-tariq/sites {"sites":[{"name":"projects/hisham-tariq/sites/hisham-tariq","defaultUrl":"https://hisham-tariq.web.app","appId":"1:460855481722:web:65bc7f19b00389346db2c3","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-29T06:11:10.183Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config [none]
+[debug] [2022-10-29T06:11:11.382Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config 200
+[debug] [2022-10-29T06:11:11.382Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:460855481722:web:65bc7f19b00389346db2c3/config {"projectId":"hisham-tariq","appId":"1:460855481722:web:65bc7f19b00389346db2c3","storageBucket":"hisham-tariq.appspot.com","apiKey":"AIzaSyBwZWslVjKIKPXcyFYlM2V_dfUrTt3P6zo","authDomain":"hisham-tariq.firebaseapp.com","messagingSenderId":"460855481722","measurementId":"G-F7BBT4GHCD"}
+[debug] [2022-10-29T06:11:16.644Z] Error: Next.js requires React 18.2.0 to be installed.
+    at Object.getBaseWebpackConfig [as default] (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/webpack-config.js:59:19)
+    at async Promise.all (index 0)
+    at async Span.traceAsyncFn (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/trace/trace.js:79:20)
+    at async /Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:449:33
+    at async /Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:433:13
+    at async Span.traceAsyncFn (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/trace/trace.js:79:20)
+    at async build (/Users/hishamtariq/Projects/NextJs/portfolio/node_modules/next/dist/build/index.js:64:29)
+    at async build (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:33:5)
+    at async prepareFrameworks (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:239:93)
+    at async deploy (/Users/hishamtariq/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

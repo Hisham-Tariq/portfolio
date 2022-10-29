@@ -1,0 +1,11 @@
+.customTitleShape{
+    display: inline-block;
+    border-radius: 47% 53% 67% 33% / 59% 49% 51% 41%  ;
+    /* Background BEautiful Gradient color */
+    /* height: 200px; */
+    /* width: 200px; */
+    background: linear-gradient(to right, #fda085, #f6d365);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
